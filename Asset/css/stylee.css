@@ -1,0 +1,47 @@
+body{
+    background-color: #282a35;
+    color: azure;
+}
+
+div{
+    padding: 5px;
+}
+
+/* Navigation */
+.navigation{
+    color: aquamarine;
+    background-color: black;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation li{
+    float: left;
+}
+
+.navigation li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: aqua;
+    background-color: #282a35
+}
+
+/* Gambar hero */
+.hero-image{
+    background: url(/Asset/image/bg-full.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}

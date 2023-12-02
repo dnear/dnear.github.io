@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #282a35;
     color: azure;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 div{
@@ -39,9 +43,48 @@ div{
 }
 
 /* Gambar hero */
+@keyframes ubah-ubah {
+    0% { color: aqua; }
+    25% { color: aliceblue; }
+    50% { color: blue; }
+    75% { color: aquamarine; }
+    100% { color: beige; }
+}
 .hero-image{
     background: url(/Asset/image/bg-full.png) no-repeat center;
     background-size: cover;
+    opacity: 1;
     height: 100vh;
     position: relative;
 }
+
+.hero-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: ubah-ubah;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Project */
+.project-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+}
+
+.project-item-left{
+    background-color: #333;
+    padding: 10px;
+    flex: 50%;
+}
+
+.project-item-right{
+    background-color: #333;
+    padding: 10px;
+    flex: 50%;
+}
+

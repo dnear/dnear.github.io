@@ -3779,6 +3779,13 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-hover-color);
 }
 
+
+.navbar-image {
+  height: 60px; /* Make the image height fit the navbar height */
+  width: 60px; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
@@ -3798,6 +3805,21 @@ textarea.form-control-lg {
 }
 .navbar-nav .dropdown-menu {
   position: static;
+}
+
+.navbar-logo {
+  height: 60px; /* Adjust the height as needed */
+  width: 60px; /* Adjust the width as needed */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid #495057; /* 2-pixel white border */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the glow effect */
+}
+
+.navbar-logo:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Glow effect */
+  
 }
 
 .navbar-text {
@@ -10980,6 +11002,8 @@ html {
 }
 .masthead .masthead-avatar {
   width: 15rem;
+  border-radius: 50%;
+  border : 5px solid whitesmoke;
 }
 
 @media (min-width: 992px) {

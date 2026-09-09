@@ -1,430 +1,842 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>dnear Project</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top" > 
-                        <img src="assets/img/nav-bar.png" class="navbar-logo" alt="Navbar Image">
-                </a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Project</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About Me</a></li>
-                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li> -->
-                    </ul>
-                </div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Denka Novian Maulana"
+    >
+
+    <meta
+        name="author"
+        content="Denka Novian Maulana"
+    >
+
+    <title>Denka — Build · Support · Design · Grow</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SPACE BACKGROUND
+    ====================================================== -->
+
+    <div class="space-background" aria-hidden="true">
+
+        <!-- Star layers -->
+        <div class="stars stars-layer-1"></div>
+        <div class="stars stars-layer-2"></div>
+        <div class="stars stars-layer-3"></div>
+
+        <!-- Nebula -->
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+
+        <!-- Galaxy -->
+        <div class="galaxy"></div>
+
+        <!-- Planets -->
+        <div class="planet planet-main"></div>
+        <div class="planet planet-small"></div>
+
+        <!-- Earth horizon -->
+        <div class="earth">
+            <div class="earth-glow"></div>
+            <div class="earth-lights"></div>
+        </div>
+
+        <!-- Asteroids -->
+        <div class="asteroid asteroid-1"></div>
+        <div class="asteroid asteroid-2"></div>
+        <div class="asteroid asteroid-3"></div>
+        <div class="asteroid asteroid-4"></div>
+        <div class="asteroid asteroid-5"></div>
+        <div class="asteroid asteroid-6"></div>
+
+    </div>
+
+
+    <!-- Mouse light -->
+    <div class="cursor-glow"></div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a
+            href="#home"
+            class="brand"
+        >
+
+            <div class="brand-logo">
+                DN
             </div>
+
+            <div class="brand-info">
+                <strong>Denka Novian Maulana</strong>
+
+                <span>
+                    Build · Support · Design · Grow
+                </span>
+            </div>
+
+        </a>
+
+
+        <nav class="desktop-nav">
+
+            <a
+                href="#home"
+                class="nav-link active"
+            >
+                Home
+            </a>
+
+            <a
+                href="#about"
+                class="nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="#projects"
+                class="nav-link"
+            >
+                Projects
+            </a>
+
+           <!--- <a
+                href="#journey"
+                class="nav-link"
+            >
+                Journey
+            </a>
+
+            <a
+                href="#contact"
+                class="nav-link"
+            >
+                Contact
+            </a>
+
         </nav>
-        <!-- Masthead-->
-        <header class="masthead text-white text-center" style="background-color: #212529;">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/Profil.jpeg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Denka Novian Maulana</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-line"></div>
+
+
+        <a
+            href="#contact"
+            class="connect-button"
+        >
+            Let's Connect
+            <span>↗</span>
+        </a>
+        -->
+
+        <!-- Mobile menu -->
+        <button
+            class="mobile-menu"
+            aria-label="Open navigation menu"
+            type="button"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- =====================================================
+         SIDE NAVIGATION
+    ====================================================== -->
+
+    <aside class="side-navigation">
+
+        <a
+            href="#home"
+            class="side-link active"
+        >
+            <strong>01</strong>
+            <span>Home</span>
+        </a>
+
+        <a
+            href="#about"
+            class="side-link"
+        >
+            <strong>02</strong>
+            <span>About</span>
+        </a>
+
+        <a
+            href="#projects"
+            class="side-link"
+        >
+            <strong>03</strong>
+            <span>Projects</span>
+        </a>
+
+        <!-- <a
+            href="#journey"
+            class="side-link"
+        >
+            <strong>04</strong>
+            <span>Journey</span>
+        </a>
+        -->
+        <a
+            href="#contact"
+            class="side-link"
+        >
+            <strong>04</strong>
+            <span>Contact</span>
+        </a>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            id="home"
+            class="hero section-target"
+        >
+
+            <div class="hero-content reveal">
+
+                <div class="eyebrow">
+
+                    <span class="status-indicator"></span>
+
+                    BUILD · SUPPORT · DESIGN · GROW
+
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">IT Support - Designer - Junior Marketing</p>
+
+
+                <h1>
+
+                    Turning Ideas
+
+                    <br>
+
+                    <span>
+                        Into Real Solutions.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Saya seorang
+                    <strong>IT Support</strong>,
+                    <strong>Designer</strong>, dan
+                    <strong>Junior Marketing</strong>
+                    yang selalu tertarik dengan teknologi,
+                    kreativitas, dan cara-cara baru untuk
+                    memecahkan masalah di dunia nyata.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#projects"
+                        class="button button-primary"
+                    >
+                        Lihat Project
+
+                        <span>→</span>
+                    </a>
+
+
+                    <a
+                        href="#about"
+                        class="button button-outline"
+                    >
+                        Tentang Saya
+                    </a>
+
+                </div>
+
             </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Project</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/portofolio/bihan bali tour.png" alt="..." />
-                            
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/portofolio/undangan/2.png" alt="..." />
-                            
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/portofolio/ads kingbbq.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <!-- <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/portofolio/gif brand.gif" alt="..." />
-                        </div>
-                    </div> -->
-                    <!-- Portfolio Item 5-->
-                    <!-- <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                        </div>
-                    </div> -->
-                    <!-- Portfolio Item 6-->
-                    <!-- <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                        </div>
-                    </div> -->
-                </div>
+
+
+            <!-- Hero floating text -->
+
+            <div class="hero-note">
+
+                <span>SAME SKY</span>
+                <span>DIFFERENT DREAMS</span>
+                <span>BUILD TOGETHER</span>
+
             </div>
+
+
+            <div class="hero-quote">
+
+                <span>
+                    “A Small Step
+                </span>
+
+                <span>
+                    For Better
+                </span>
+
+                <span>
+                    Solutions”
+                </span>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <i></i>
+
+            </div>
+
         </section>
-        <!-- About Section-->
-        <section class="page-section text-white mb-0" id="about" style="background-color:#343a40;">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            Denpasar, Bali
-                            <br />
-                            - Indonesia
-                        </p>
+
+
+        <!-- =================================================
+             STATS
+        ================================================== -->
+
+        <section class="stats-section">
+
+            <div class="stats-container">
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        ◇
                     </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Social Media</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/denka.near"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/denka_near/"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/denkanovian/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a> -->
+
+                    <div>
+                        <strong>1+</strong>
+                        <span>Project</span>
                     </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Contact Me</h4> 
-                        <a href="https://wa.me/6282145100595">
-                            <img src="assets/QR WA.png" alt="Contact Me" class="rounded-5" srcset="" data-toggle="tooltip" data-placement="right" title="Click or Scan">
-                        </a>
-                    </div>
+
                 </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        ↯
+                    </div>
+
+                    <div>
+                        <strong>Terus</strong>
+                        <span>Belajar</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        ∞
+                    </div>
+
+                    <div>
+                        <strong>Selalu</strong>
+                        <span>Berkembang</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        ☆
+                    </div>
+
+                    <div>
+                        <strong>Terbuka</strong>
+                        <span>Untuk Kolaborasi</span>
+                    </div>
+
+                </div>
+
+
             </div>
+
         </section>
-        
-        <!-- Footer-->
-        <!-- <footer class="footer text-center">
-            
-        </footer> -->
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; dnear Project</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Website Company Profile</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/portofolio/bihan bali tour.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="align-content-end">
-                                        <p class="mb-2" >
-                                            <ul style="text-align: left;">
-                                                <li><b>Proyek</b>: Website Company Profile Bihan Bali Tour</li>
-                                                <li><b>Klien</b>: Bihan Bali Tour</li>
-                                                <li>
-                                                    <b>Deskripsi Proyek</b>:
-                                            Saya diberikan kesempatan untuk mengembangkan website company profile bagi Bihan Bali Tour, sebuah perusahaan yang menawarkan berbagai paket wisata dan layanan travel di Bali. Tujuan utama dari proyek ini adalah untuk menciptakan sebuah platform online yang menarik dan informatif, yang dapat membantu Bihan Bali Tour memperluas jangkauan pasar dan meningkatkan interaksi dengan calon pelanggan.
-                                                </li>
-                                                <li><b>Fitur Utama</b>:</li>
-                                                <ol><i class="fa-solid fa-star"></i> Desain Responsif: Website ini dirancang agar tampil optimal di berbagai perangkat, mulai dari desktop hingga smartphone.</ol>
-                                                <ol><i class="fa-solid fa-star"></i> Informasi Paket Wisata:** Menyediakan deskripsi lengkap tentang berbagai paket wisata yang ditawarkan, termasuk foto, harga, dan jadwal.</ol>
-                                                <ol><i class="fa-solid fa-star"></i> Halaman Tentang Kami: Menceritakan sejarah dan visi misi Bihan Bali Tour, serta memperkenalkan tim profesional mereka.</ol>
-                                                <li><b>Teknologi yang Digunakan</b>:</li>
-                                                <ol><i class="fa-solid fa-star"></i> HTML5 & CSS3: Untuk struktur dan gaya visual website.</ol>
-                                                <ol><i class="fa-solid fa-star"></i> JavaScript: Untuk interaktivitas dan fitur dinamis.</ol>
-                                                <ol><i class="fa-solid fa-star"></i> SEO Optimization: Menerapkan teknik optimasi mesin pencari untuk meningkatkan visibilitas website di hasil pencarian.</ol>
-                                            </ul>                                            
-                                            <a class="btn btn-primary" href="assets/portofolio/bihanbalitour.com/index.html" role="button">Kunjungi Website</a>
-                                            </p>
-                                    </div>
-                                    
-                                    <button class="btn btn-danger" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            id="about"
+            class="section about-section section-target"
+        >
+
+            <div class="section-label">
+                01 / ABOUT
             </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Undangan Pernikahan</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/portofolio/undangan/2.png" alt="..." />
-                                    <img class="img-fluid rounded mb-5" src="assets/portofolio/undangan/1.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-2" >
-                                        <ul style="text-align: left;">
-                                            <li><b>Proyek</b>: Desain dan Cetak Undangan Pernikahan</li>
-                                            <li><b>Klien</b>: Cipung</li>
-                                            <li>
-                                                <b>Deskripsi Proyek</b>:
-                                                Sebagai seorang freelancer, saya bertanggung jawab untuk mendesain dan mencetak undangan pernikahan yang elegan dan terjangkau. Proyek ini bertujuan untuk memberikan solusi undangan yang memenuhi ekspektasi estetika dan kebutuhan anggaran klien.
-                                            </li>
-                                            <li><b>Fitur Utama</b>:</li>
-                                            <ol><i class="fa-solid fa-star"></i>Desain Kustom: Setiap undangan dirancang khusus sesuai dengan tema dan preferensi pasangan pengantin, mencakup berbagai gaya mulai dari klasik hingga modern.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Kualitas Cetak Tinggi: Menggunakan teknologi cetak terbaru untuk memastikan warna dan detail desain tampak sempurna.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Bahan Berkualitas: Pilihan kertas premium dengan tekstur dan ketebalan yang sesuai untuk memberikan kesan mewah.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Layanan Konsultasi: Memberikan layanan konsultasi desain untuk membantu klien menentukan konsep dan gaya yang paling sesuai dengan tema pernikahan mereka.</ol>
-                                            <li><b>Teknologi yang Digunakan</b>:</li>
-                                            <ol><i class="fa-solid fa-star"></i> Adobe Illustrator & Photoshop: Untuk menciptakan desain yang detail dan kreatif.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Mesin Cetak Digital & Offset: Untuk berbagai pilihan cetak sesuai kebutuhan kuantitas dan kualitas.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Proses Finishing: Termasuk pemotongan, pelipatan, dan hiasan tambahan seperti embossing, foiling, atau ribbon.</ol>
-                                            <li><b>Hasil Akhir</b>: Undangan pernikahan yang dihasilkan berhasil memenuhi harapan klien dalam hal desain dan anggaran. Undangan tersebut tidak hanya berfungsi sebagai informasi acara, tetapi juga sebagai kenang-kenangan yang indah bagi para tamu.</li>
-                                        </ul>                                            
-                                        </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+            <div class="about-grid">
+
+
+                <div class="about-heading reveal">
+
+                    <p class="accent-text">
+                        CURIOUS BY DEFAULT
+                    </p>
+
+                    <h2>
+
+                        Technical thinking.
+
+                        <br>
+
+                        <em>
+                            Creative execution.
+                        </em>
+
+                    </h2>
+
                 </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Desain Promosi Restoran dan Konten Instagram</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/portofolio/Brosur Merchant Kings BBQ.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-2" >
-                                        <ul style="text-align: left;">
-                                            <li><b>Proyek</b>: Desain Promosi Restoran dan Konten Instagram untuk Kings BBQ</li>
-                                            <li><b>Klien</b>: Kings BBQ</li>
-                                            <li>
-                                                <b>Deskripsi Proyek</b>:
-                                                Sebagai seorang freelancer, saya mengerjakan proyek desain promosi dan manajemen konten Instagram untuk Kings BBQ, sebuah restoran yang terkenal dengan hidangan barbekyu berkualitas tinggi. Tujuan dari proyek ini adalah untuk meningkatkan visibilitas restoran secara online, menarik lebih banyak pelanggan, dan membangun citra brand yang kuat di media sosial.
-                                            </li>
-                                            <li><b>Fitur Utama</b>:</li>
-                                            <ol><i class="fa-solid fa-star"></i>Desain Grafis Promosi: Membuat desain poster, banner, dan materi promosi lainnya yang menarik dan sesuai dengan identitas brand Kings BBQ.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Strategi Konten Instagram: Menyusun strategi konten yang mencakup kalender posting, tema, dan gaya visual yang konsisten untuk akun Instagram Kings BBQ.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Fotografi dan Videografi: Mengambil foto dan video profesional dari hidangan, suasana restoran, dan acara spesial untuk digunakan dalam konten Instagram.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Desain Feed Instagram: Membuat feed Instagram yang estetis dan teratur dengan menggunakan template desain yang konsisten.</ol>
-                                            <li><b>Teknologi yang Digunakan</b>:</li>
-                                            <ol><i class="fa-solid fa-star"></i> Adobe Creative Suite (Photoshop, Illustrator): Untuk desain grafis yang menarik dan kreatif.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Camera DSLR & Smartphone: Untuk fotografi dan videografi berkualitas tinggi.</ol>
-                                            <ol><i class="fa-solid fa-star"></i> Social Media Management Tools: Menggunakan alat manajemen media sosial untuk menjadwalkan dan menganalisis performa konten.</ol>
-                                            <li><b>Hasil Akhir</b>: Proyek ini bertujuan meningkatkan pengikut dan engagement di akun Instagram Kings BBQ secara signifikan. Desain promosi yang menarik bertujuan menarik lebih banyak pelanggan ke restoran dan meningkatkan penjualan.</li>
-                                        </ul>                                            
-                                        </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+                <div class="about-description reveal">
+
+                    <p>
+
+                        Saya senang berada di antara
+                        teknologi, desain, dan komunikasi.
+
+                        Dari menyelesaikan masalah teknis
+                        sampai membuat visual dan ide yang
+                        lebih mudah dipahami.
+
+                    </p>
+
+
+                    <p>
+
+                        Buat saya, solusi yang baik bukan
+                        hanya bekerja — tetapi juga sederhana,
+                        jelas, dan berguna.
+
+                    </p>
+
                 </div>
+
+
             </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section
+            id="projects"
+            class="section projects-section section-target"
+        >
+
+            <div class="section-label">
+                02 / PROJECTS
+            </div>
+
+
+            <div class="projects-heading reveal">
+
+                <div>
+
+                    <p class="accent-text">
+                        FEATURED PROJECT
+                    </p>
+
+                    <h2>
+
+                        Things I've
+                        <em>Built.</em>
+
+                    </h2>
+
                 </div>
+
+
+                <span class="live-project">
+                    ● LIVE PROJECT
+                </span>
+
             </div>
+
+
+            <!-- D-Finance -->
+
+            <article
+                class="project-card tilt-card reveal"
+            >
+
+
+                <!-- Project visual -->
+
+                <div class="project-visual">
+
+    <div class="project-carousel" id="financeCarousel">
+
+        <div class="carousel-track">
+
+            <div class="carousel-slide">
+                <img
+                    src="assets/d-finance1.jpg"
+                    alt="D-Finance Login"
+                >
+            </div>
+
+            <div class="carousel-slide">
+                <img
+                    src="assets/d-finance2.jpg"
+                    alt="D-Finance Dashboard"
+                >
+            </div>
+
+            <div class="carousel-slide">
+                <img
+                    src="assets/d-finance3.jpg"
+                    alt="D-Finance Add Transaction"
+                >
+            </div>
+
+            <div class="carousel-slide">
+                <img
+                    src="assets/d-finance4.jpg"
+                    alt="D-Finance Pengaturan"
+                >
+            </div>
+
         </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+
+        <!-- Tombol kiri -->
+        <button
+            class="carousel-arrow carousel-prev"
+            type="button"
+            aria-label="Screenshot sebelumnya"
+        >
+            ‹
+        </button>
+
+        <!-- Tombol kanan -->
+        <button
+            class="carousel-arrow carousel-next"
+            type="button"
+            aria-label="Screenshot berikutnya"
+        >
+            ›
+        </button>
+
+        <!-- Indicator -->
+        <div class="carousel-dots">
+            <button class="carousel-dot active" data-slide="0"></button>
+            <button class="carousel-dot" data-slide="1"></button>
+            <button class="carousel-dot" data-slide="2"></button>
+            <button class="carousel-dot" data-slide="3"></button>
+        </div>
+
+    </div>
+
+</div>
+
+
+                <!-- Project information -->
+
+                <div class="project-information">
+
+                    <div class="project-title">
+
+                        <h3>
+                            D-Finance
+                        </h3>
+
+                        <span class="project-status">
+                            Aktif
+                        </span>
+
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+
+
+                    <p>
+
+                        Dompet digital untuk pencatatan
+                        keuangan pribadi yang simpel
+                        dan mudah digunakan.
+
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>
+                            Web App
+                        </span>
+
+                        <span>
+                            Finance
+                        </span>
+
+                        <span>
+                            Personal Project
+                        </span>
+
                     </div>
+
+
+                    <a
+                        href="https://dnear.tail0ca0b3.ts.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button button-primary project-button"
+                    >
+
+                        Live Demo
+
+                        <span>↗</span>
+
+                    </a>
+
                 </div>
+
+
+                <!-- Project quote -->
+
+                <blockquote>
+
+                    “Mengelola keuangan
+                    dengan lebih mudah
+                    untuk masa depan
+                    yang lebih baik.”
+
+                </blockquote>
+
+
+            </article>
+
+        </section>
+
+
+        <!-- =================================================
+             JOURNEY / APPROACH
+       
+
+        <section
+            id="journey"
+            class="section journey-section section-target"
+        >
+
+            <div class="section-label">
+                03 / APPROACH
             </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+
+
+            <div class="journey-grid">
+
+
+                <div class="journey-item reveal">
+
+                    <small>
+                        01
+                    </small>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        Memahami masalah sebelum
+                        buru-buru mencari solusi.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-item reveal">
+
+                    <small>
+                        02
+                    </small>
+
+                    <h3>
+                        Design
+                    </h3>
+
+                    <p>
+                        Menyederhanakan ide menjadi
+                        pengalaman yang jelas.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-item reveal">
+
+                    <small>
+                        03
+                    </small>
+
+                    <h3>
+                        Build
+                    </h3>
+
+                    <p>
+                        Mengubah konsep menjadi
+                        sesuatu yang bisa digunakan.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-item reveal">
+
+                    <small>
+                        04
+                    </small>
+
+                    <h3>
+                        Improve
+                    </h3>
+
+                    <p>
+                        Menguji, memperbaiki,
+                        dan terus belajar.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        ========= ========================================= -->
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            id="contact"
+            class="section contact-section section-target"
+        >
+
+            <div class="contact-content reveal">
+
+                <p class="accent-text">
+                    HAVE AN IDEA?
+                </p>
+
+
+                <h2>
+
+                    Let's make
+
+                    <br>
+
+                    <em>
+                        something useful.
+                    </em>
+
+                </h2>
+
+
+                <p class="contact-description">
+
+                    Terbuka untuk project,
+                    kolaborasi, dan kesempatan baru.
+
+                </p>
+
+
+                <!-- Ganti email ini nanti -->
+
+                <a
+                    href="mailto:your@email.com"
+                    class="email-link"
+                >
+
+                    your@email.com
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <span>
+            © 2026 DENKA NEAR
+        </span>
+
+        <span>
+            TECHNOLOGY · CREATIVITY · REAL IMPACT
+        </span>
+
+        <a href="#home">
+            BACK TO TOP ↑
+        </a>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
+</body>
 </html>

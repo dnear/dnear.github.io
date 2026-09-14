@@ -796,7 +796,7 @@ const footerYear =
 if (footerYear) {
 
     footerYear.textContent =
-        `© ${new Date().getFullYear()} DENKA NEAR`;
+        `© ${new Date().getFullYear()} dnearProject`;
 
 }
 

@@ -817,26 +817,24 @@ window.addEventListener(
 );
 
 /* =========================================================
-   D-FINANCE 3D SCREENSHOT CAROUSEL
+   PROJECT SCREENSHOT CAROUSELS
    ========================================================= */
 
-const financeCarousel = document.getElementById("financeCarousel");
-
-if (financeCarousel) {
+document.querySelectorAll(".project-carousel").forEach((carousel) => {
 
     const slides = [
-        ...financeCarousel.querySelectorAll(".carousel-slide")
+        ...carousel.querySelectorAll(".carousel-slide")
     ];
 
     const dots = [
-        ...financeCarousel.querySelectorAll(".carousel-dot")
+        ...carousel.querySelectorAll(".carousel-dot")
     ];
 
     const prevButton =
-        financeCarousel.querySelector(".carousel-prev");
+        carousel.querySelector(".carousel-prev");
 
     const nextButton =
-        financeCarousel.querySelector(".carousel-next");
+        carousel.querySelector(".carousel-next");
 
 
     let currentSlide = 0;
@@ -848,7 +846,7 @@ if (financeCarousel) {
        UPDATE CAROUSEL
        ----------------------------------------------------- */
 
-    function updateFinanceCarousel(index) {
+    function updateCarousel(index) {
 
         currentSlide =
             (index + slides.length) % slides.length;
@@ -871,19 +869,19 @@ if (financeCarousel) {
 
             } else if (
                 i ===
-                (currentSlide - 1 + slides.length) %
-                    slides.length
-            ) {
-
-                slide.classList.add("left");
-
-            } else if (
-                i ===
                 (currentSlide + 1) %
                     slides.length
             ) {
 
                 slide.classList.add("right");
+
+            } else if (
+                i ===
+                (currentSlide - 1 + slides.length) %
+                    slides.length
+            ) {
+
+                slide.classList.add("left");
 
             } else {
 
@@ -931,9 +929,9 @@ if (financeCarousel) {
        NEXT
        ----------------------------------------------------- */
 
-    function nextFinanceSlide() {
+    function nextSlide() {
 
-        updateFinanceCarousel(
+        updateCarousel(
             currentSlide + 1
         );
     }
@@ -943,9 +941,9 @@ if (financeCarousel) {
        PREVIOUS
        ----------------------------------------------------- */
 
-    function previousFinanceSlide() {
+    function previousSlide() {
 
-        updateFinanceCarousel(
+        updateCarousel(
             currentSlide - 1
         );
     }
@@ -955,19 +953,19 @@ if (financeCarousel) {
        AUTO PLAY
        ----------------------------------------------------- */
 
-    function startFinanceCarousel() {
+    function startCarousel() {
 
-        stopFinanceCarousel();
+        stopCarousel();
 
         carouselTimer = setInterval(() => {
 
-            nextFinanceSlide();
+            nextSlide();
 
         }, 2000);
     }
 
 
-    function stopFinanceCarousel() {
+    function stopCarousel() {
 
         if (carouselTimer) {
 
@@ -988,9 +986,9 @@ if (financeCarousel) {
             "click",
             () => {
 
-                nextFinanceSlide();
+                nextSlide();
 
-                startFinanceCarousel();
+                startCarousel();
             }
         );
     }
@@ -1002,9 +1000,9 @@ if (financeCarousel) {
             "click",
             () => {
 
-                previousFinanceSlide();
+                previousSlide();
 
-                startFinanceCarousel();
+                startCarousel();
             }
         );
     }
@@ -1020,9 +1018,9 @@ if (financeCarousel) {
             "click",
             () => {
 
-                updateFinanceCarousel(index);
+                updateCarousel(index);
 
-                startFinanceCarousel();
+                startCarousel();
             }
         );
     });
@@ -1032,20 +1030,20 @@ if (financeCarousel) {
        PAUSE WHEN HOVER
        ----------------------------------------------------- */
 
-    financeCarousel.addEventListener(
+    carousel.addEventListener(
         "mouseenter",
         () => {
 
-            stopFinanceCarousel();
+            stopCarousel();
         }
     );
 
 
-    financeCarousel.addEventListener(
+    carousel.addEventListener(
         "mouseleave",
         () => {
 
-            startFinanceCarousel();
+            startCarousel();
         }
     );
 
@@ -1054,7 +1052,7 @@ if (financeCarousel) {
        INITIAL STATE
        ----------------------------------------------------- */
 
-    updateFinanceCarousel(0);
+    updateCarousel(0);
 
-    startFinanceCarousel();
-}
+    startCarousel();
+});
